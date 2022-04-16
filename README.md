@@ -1,5 +1,23 @@
 # Nouzan's emacs config
 
+Thanks to the excellent blog of [configuring emacs for rust development](https://robert.kra.hn/posts/2021-02-07_rust-with-emacs/#additional-packages).
+
+## Prerequisites
+### Rust
+```
+rustup component add rust-src
+```
+
+### rust-analyzer
+```
+git clone https://github.com/rust-analyzer/rust-analyzer.git
+cd rust-analyzer
+cargo xtask install --server
+```
+
+## Emacs
+We need `emacs >= 27.1`.
+
 ## Quickstart
 ```
 git clone https://github.com/Nouzan/nouzan-emacs.git
