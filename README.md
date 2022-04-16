@@ -1,6 +1,6 @@
 # Nouzan's emacs config
 
-Thanks to the excellent blog of [configuring emacs for rust development](https://robert.kra.hn/posts/2021-02-07_rust-with-emacs/#additional-packages).
+Thanks to this excellent blog: [configuring emacs for rust development](https://robert.kra.hn/posts/2021-02-07_rust-with-emacs/#additional-packages).
 
 ## Prerequisites
 ### Rust
