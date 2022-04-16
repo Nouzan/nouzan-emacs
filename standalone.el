@@ -32,7 +32,7 @@
   ;; (setq lsp-signature-auto-activate nil)
 
   ;; comment to disable rustfmt on save
-  (setq rustic-format-on-save t)
+  ;; (setq rustic-format-on-save t)
   (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
 
 (defun rk/rustic-mode-hook ()
