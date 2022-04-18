@@ -33,6 +33,7 @@
 
   ;; comment to disable rustfmt on save
   ;; (setq rustic-format-on-save t)
+  ;; (setq lsp-ui-sideline-enable nil)
   (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
 
 (defun rk/rustic-mode-hook ()
@@ -130,6 +131,13 @@
           (indent-for-tab-command)))))
 
 (use-package flycheck :ensure)
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Flycheck errors*" eos)
+              (display-buffer-reuse-window
+               display-buffer-in-side-window)
+              (side            . bottom)
+              (reusable-frames . visible)
+              (window-height   . 0.33)))
 
 (use-package projectile :ensure)
 (projectile-mode +1)
