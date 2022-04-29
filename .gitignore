@@ -3,3 +3,4 @@ elpa/
 .lsp-session-*
 projectile*
 recentf
+/transient/
