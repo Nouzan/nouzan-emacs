@@ -4,9 +4,10 @@
 ;; (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 (require 'package)
-(setq package-archives '(("melpa" . "http://melpa.org/packages/")
-                         ("gnu" . "http://elpa.gnu.org/packages/")))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")))
 ;; (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
+(add-to-list 'package-archives '("melpa-stable","https://stable.melpa.org/packages/"))
 (setq package-user-dir (expand-file-name "elpa/" user-emacs-directory))
 (package-initialize)
 
@@ -48,7 +49,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(counsel rustic use-package)))
+ '(package-selected-packages '(magit counsel rustic use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -166,3 +167,6 @@
 
 (use-package which-key :ensure)
 (which-key-mode)
+
+;; Magit
+(use-package magit :ensure)
