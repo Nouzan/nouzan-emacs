@@ -49,7 +49,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(magit counsel rustic use-package)))
+ '(package-selected-packages '(exec-path-from-shell magit counsel rustic use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -175,4 +175,8 @@
 (use-package exec-path-from-shell :ensure)
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+
+;; Theme
+(use-package vscode-dark-plus-theme :ensure)
+(load-theme 'vscode-dark-plus t)
 
