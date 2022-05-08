@@ -184,3 +184,8 @@
 (use-package ace-window :ensure)
 (global-set-key (kbd "M-o") 'ace-window)
 (setq aw-dispatch-always t)
+
+;; expand-region
+(use-package expand-region
+  :ensure
+  :bind ("C-=" . er/expand-region))
