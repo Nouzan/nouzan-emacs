@@ -208,7 +208,7 @@
 
 (key-chord-define-global "jj" 'avy-goto-word-1)
 (key-chord-define-global "jk" 'avy-goto-char)
-(key-chord-define-global "jl" 'avy-goto-char)
+(key-chord-define-global "jl" 'avy-goto-line)
 
 ;; display line numbers
 (global-display-line-numbers-mode)
