@@ -189,3 +189,23 @@
 (use-package expand-region
   :ensure
   :bind ("C-=" . er/expand-region))
+
+;; avy
+(use-package avy
+  :ensure
+  :bind ("C-:" . avy-goto-char)
+  :bind ("C-'" . avy-goto-char-2)
+  :bind ("M-g f" . avy-goto-line)
+  :bind ("M-g w" . avy-goto-word-1)
+  :bind ("M-g e" . avy-goto-word-0))
+
+(avy-setup-default)
+(global-set-key (kbd "C-c C-j") 'avy-resume)
+
+;; key-chord
+(use-package key-chord :ensure)
+(key-chord-mode 1)
+
+(key-chord-define-global "jj" 'avy-goto-word-1)
+(key-chord-define-global "jk" 'avy-goto-char)
+(key-chord-define-global "jl" 'avy-goto-char)
