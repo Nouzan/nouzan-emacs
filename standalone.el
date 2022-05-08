@@ -180,3 +180,7 @@
 (use-package vscode-dark-plus-theme :ensure)
 (load-theme 'vscode-dark-plus t)
 
+;; ace-window
+(use-package ace-window :ensure)
+(global-set-key (kbd "M-o") 'ace-window)
+(setq aw-dispatch-always t)
