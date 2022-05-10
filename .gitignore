@@ -4,3 +4,4 @@ elpa/
 projectile*
 recentf
 /transient/
+flycheck_standalone.el
